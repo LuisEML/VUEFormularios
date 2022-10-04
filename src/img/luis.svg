@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="150" viewBox="0 0 250 150">
+  <defs>
+    <clipPath id="clip-SPRK_default_preset_name_custom_1">
+      <rect width="250" height="150"/>
+    </clipPath>
+  </defs>
+  <g id="SPRK_default_preset_name_custom_1" data-name="SPRK_default_preset_name_custom – 1" clip-path="url(#clip-SPRK_default_preset_name_custom_1)">
+    <rect width="250" height="150" fill="#fff"/>
+    <text id="DonLuis" transform="translate(16 89)" fill="#2cd098" font-size="50" font-family="SnapITC-Regular, Snap ITC"><tspan x="0" y="0">DonLuis</tspan></text>
+  </g>
+</svg>
