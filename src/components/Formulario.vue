@@ -18,7 +18,6 @@ export default {
         completado: false,
       };
       this.proyectos.push(proyecto);
-      localStorage.setItem("proyectos", JSON.stringify(this.proyectos));
       this.proyecto = "";
       this.tipo = "";
       this.urgente = false;
@@ -27,6 +26,17 @@ export default {
       // this.proyectos[id].urgente = !this.proyectos[id].urgente;
       proyecto[campo] = !proyecto[campo];
     },
+    saveData(){
+      localStorage.setItem("proyectos", JSON.stringify(this.proyectos));
+    },
+    limpiarData(){
+      this.proyectos = [];
+      localStorage.clear();
+    },
+    eliminarData(index){
+      this.proyectos.splice(index,1);
+      this.saveData();
+    }
   },
   computed: {
     numeroProyectos() {
@@ -81,7 +91,10 @@ export default {
      <total-proyectos 
      :numeroProyectos="numeroProyectos" 
      :proyectos="proyectos" 
-     :cambiarEstado="cambiarEstado"/>
+     :cambiarEstado="cambiarEstado"
+     :limpiarData="limpiarData"
+     :eliminarData="eliminarData"/>
+     
     </div>
   </div>
 </template>
